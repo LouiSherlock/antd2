@@ -1,0 +1,56 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "lint": "eslint --ext .js src mock tests",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^0.1.5",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "umi": "^2.2.7",
+    "umi-plugin-react": "^1.1.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "antd": "^3.10.4",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.0",
+    "dva-loading": "latest",
+    "hash.js": "^1.1.5",
+    "lodash": "^4.17.10",
+    "mockjs": "^1.0.1-beta3",
+    "moment": "^2.22.2",
+    "nprogress": "^0.2.0",
+    "omit.js": "^1.0.0",
+    "prop-types": "^15.5.10",
+    "qs": "^6.5.2",
+    "rc-animate": "^2.4.4",
+    "rc-tween-one": "^2.2.17",
+    "react": "^16.6.3",
+    "react-container-query": "^0.11.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.6.3",
+    "react-fittext": "^1.0.0",
+    "react-router-dom": "^4.3.1",
+    "roadhog-api-doc": "^1.1.2"
+  }
+}
